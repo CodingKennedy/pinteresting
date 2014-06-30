@@ -1,5 +1,8 @@
-Rails.application.routes.draw do
+Pinteresting::Application.routes.draw do
+  resources :pins
+
   devise_for :users
+  # post "users/sign_up"
   root 'pages#home'
   get 'about' => 'pages#about'
 
