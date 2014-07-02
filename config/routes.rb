@@ -1,7 +1,7 @@
 Pinteresting::Application.routes.draw do
+  devise_for :users
   resources :pins
 
-  devise_for :users
   # post "users/sign_up"
   root 'pages#home'
   get 'about' => 'pages#about'
